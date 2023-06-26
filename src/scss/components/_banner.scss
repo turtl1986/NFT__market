@@ -1,0 +1,50 @@
+.banner {
+  padding: 100px 0 122px 0;
+  &__container {
+    display: flex;
+    gap: 98px;
+  }
+  &__text {
+    display: flex;
+    flex-direction: column;
+  }
+  &__title {
+    color: #000;
+    font-size: 40px;
+    font-family: "Maven";
+    letter-spacing: 2px;
+    padding-bottom: 22px;
+  }
+  &__description {
+    color: #565656;
+    font-size: 20px;
+    line-height: 160%;
+    padding-bottom: 41px;
+  }
+  &__button {
+    padding: 20px 40px;
+    align-self: start;
+    margin-bottom: 30px;
+  }
+  &__statistics {
+    display: flex;
+    gap: 23px;
+  }
+}
+
+.statistic__text {
+  display: flex;
+  flex-direction: column;
+}
+.statistic__number {
+  color: #000;
+  font-size: 40px;
+  font-family: "Maven";
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+.statistic__name {
+  color: #565656;
+  font-size: 20px;
+  line-height: 160%;
+}

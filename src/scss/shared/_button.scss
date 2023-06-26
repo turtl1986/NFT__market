@@ -1,0 +1,58 @@
+.button--border {
+  border-radius: 60px;
+  border: 2px solid #3d00b7;
+  color: #3d00b7;
+
+  text-align: center;
+
+  &:hover {
+    background: #3d00b7;
+    color: #fff;
+  }
+}
+
+.button--background {
+  text-align: center;
+  border-radius: 60px;
+  background: #3d00b7;
+  color: #fff;
+
+  &:hover {
+    border: 2px solid #3d00b7;
+    color: #3d00b7;
+    background-color: #fff;
+  }
+}
+
+.button--chose {
+  padding: 10px 20px;
+  text-align: center;
+  border-radius: 100px;
+  background: rgba(220, 220, 220, 0.2);
+  color: #000;
+  font-size: 14px;
+  font-family: DM Sans;
+  font-weight: 500;
+  line-height: 17.452px;
+  &:hover {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 17.452px;
+    background: #3d00b7;
+  }
+}
+
+.button--collection {
+  padding: 10px 20px;
+  text-align: center;
+  border-radius: 60px;
+  border: 1px solid #2639ed;
+  color: #2639ed;
+  font-size: 11.001px;
+  font-weight: 700;
+  &:hover {
+    background: #3d00b7;
+    color: #fff;
+  }
+}
