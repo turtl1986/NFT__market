@@ -3,10 +3,9 @@
   backdrop-filter: blur(25px);
   padding: 65px 0 99px 0;
   &__container {
-    display: flex;
-    flex-direction: column;
+    @include flex(flex, column, 55px);
+
     justify-content: flex-start;
-    gap: 55px;
   }
   &__title {
     color: #000;
@@ -15,33 +14,24 @@
     font-weight: 700;
   }
   &__items {
-    display: flex;
-    gap: 31.39px;
-    flex-direction: row;
+    @include flex(flex, row, 31.39px);
   }
 
   &__item {
-    display: flex;
-    flex-direction: column;
-    gap: 29.34px;
+    @include flex(flex, column, 29.34px);
   }
 
   &__collection {
-    display: flex;
-    gap: 9.17px;
+    @include flex(flex, row, 9.17px);
   }
 
   &__description {
-    display: flex;
-    flex-direction: column;
-    gap: 10.24px;
+    @include flex(flex, column, 10.24px);
   }
 }
 
 .collection__imgs {
-  display: flex;
-  flex-direction: column;
-  gap: 8.25px;
+  @include flex(flex, column, 8.25px);
 }
 
 .description__name {
@@ -50,11 +40,11 @@
   font-weight: 700;
 }
 .description__informations {
-  display: flex;
-  gap: 146px;
+  @include flex(flex, row, 146px);
   justify-content: flex-start;
 }
 .informations__user {
+  @include flex(flex, row, 10px);
   display: flex;
   gap: 10px;
 }

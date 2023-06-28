@@ -1,12 +1,12 @@
 .banner {
   padding: 100px 0 122px 0;
+
   &__container {
-    display: flex;
-    gap: 98px;
+    @include flex(flex, row, 0px);
+    justify-content: space-between;
   }
   &__text {
-    display: flex;
-    flex-direction: column;
+    @include flex(flex, column, 0px);
   }
   &__title {
     color: #000;
@@ -25,16 +25,69 @@
     padding: 20px 40px;
     align-self: start;
     margin-bottom: 30px;
+    font-size: 20px;
+    font-family: "Maven";
+    letter-spacing: 1.3px;
   }
   &__statistics {
-    display: flex;
-    gap: 23px;
+    @include flex(flex, row, 23px);
+  }
+
+  &__sliders {
+    position: relative;
+    padding-left: 50px;
+
+    &::before {
+      position: absolute;
+      content: "";
+      background-image: url(../../assets/icon/label.svg);
+      width: 101px;
+      height: 101px;
+      background-size: cover;
+      z-index: 1;
+      background-repeat: no-repeat;
+      bottom: 104px;
+      left: 0;
+    }
+  }
+  &__slider {
+    @include flex(flex, column, 0px);
+
+    position: relative;
+
+    align-items: baseline;
+    justify-content: center;
+    align-self: center;
+    background-image: url(../../assets/image/baner__slide1.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 400px;
+    height: 440px;
+    border-radius: 24px;
+    position: relative;
   }
 }
 
+.slider--2 {
+  content: "";
+  position: absolute;
+  width: 356px;
+  height: 391.6px;
+  left: 86px;
+  z-index: -1;
+}
+
+.slider--3 {
+  content: "";
+  position: absolute;
+  width: 310px;
+  height: 341px;
+  left: 167px;
+  z-index: -2;
+}
+
 .statistic__text {
-  display: flex;
-  flex-direction: column;
+  @include flex(flex, column, 0px);
 }
 .statistic__number {
   color: #000;
@@ -47,4 +100,55 @@
   color: #565656;
   font-size: 20px;
   line-height: 160%;
+}
+
+.title__slider {
+  color: #fff;
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: -1.4px;
+  margin-bottom: 10px;
+  align-self: flex-start;
+  margin-left: 26px;
+  margin-top: 26px;
+}
+.information__author {
+  @include flex(flex, row, 14.4px);
+
+  align-items: center;
+  margin-left: 26px;
+}
+
+.author__name {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 700;
+}
+.information__slider {
+  @include flex(flex, row, 104px);
+
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(25px);
+  margin-top: 238px;
+  align-self: center;
+  padding: 14.56px 26px;
+  margin-bottom: 26px;
+}
+.information__cost {
+  @include flex(flex, column, 7.18px);
+}
+.information__title {
+  color: #fff;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.information__times {
+  @include flex(flex, column, 7.18px);
+}
+.information__time {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
 }

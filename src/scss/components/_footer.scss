@@ -1,29 +1,24 @@
 .footer {
   &__container {
-    display: flex;
-    flex-direction: column;
+    @include flex(flex, column, 0px);
+
     align-items: center;
     padding: 79px 0 24px 0;
   }
   &__information {
-    display: flex;
-    gap: 100px;
+    @include flex(flex, row, 100px);
+
     padding-bottom: 69px;
   }
   &__social {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
+    @include flex(flex, column, 30px);
   }
 
   &__form {
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
+    @include flex(flex, column, 24px);
   }
   &__menu {
-    display: flex;
-    gap: 92px;
+    @include flex(flex, row, 92px);
   }
   &__line {
     background: #f4f4f4;
@@ -50,8 +45,7 @@
   line-height: 160%;
 }
 .social__links {
-  display: flex;
-  gap: 16px;
+  @include flex(flex, row, 16px);
 }
 
 .menu__title {
@@ -81,10 +75,10 @@
   line-height: 160%;
 }
 .form {
-  display: flex;
+  @include flex(flex, row, 0px);
   padding: 10px 10px 10px 25px;
   border-radius: 45.595px;
-  //   justify-content: space-around;
+
   border: 2px solid #f1f1f1;
   background: #fff;
 }

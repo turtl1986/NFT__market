@@ -1,6 +1,5 @@
 .cost {
-  display: flex;
-  gap: 8px;
+  @include flex(flex, row, 8px);
   justify-content: center;
   align-items: center;
 
@@ -12,9 +11,10 @@
 }
 
 .cost--border {
-  display: flex;
+  @include flex(flex, row, 5px);
+
   padding: 8px;
-  gap: 5px;
+
   border-radius: 6px;
   border: 1px solid #00ac4f;
   justify-content: center;
@@ -27,14 +27,26 @@
 }
 
 .cost--green {
-  display: flex;
-  gap: 8px;
+  @include flex(flex, row, 8px);
+
   justify-content: center;
   align-items: center;
   &__price {
     color: #00ac4f;
     font-size: 10.971px;
 
+    font-weight: 700;
+  }
+}
+
+.cost--white {
+  @include flex(flex, row, 8px);
+
+  justify-content: center;
+  align-items: center;
+  &__price {
+    color: #fff;
+    font-size: 16px;
     font-weight: 700;
   }
 }

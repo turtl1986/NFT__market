@@ -1,17 +1,16 @@
 .header {
   &__container {
-    display: flex;
-    text-align: center;
+    @include flex(flex, row, 0px);
 
+    align-items: center;
     padding: 30px 0;
   }
   &__menu {
-    display: flex;
-    gap: 2.9rem;
+    @include flex(flex, row, 0px);
     padding: 0 66px 0 80px;
   }
   &__form {
-    display: flex;
+    @include flex(flex, row, 0px);
     gap: 20px;
   }
   &__search--castom {
@@ -44,14 +43,14 @@
 }
 
 .menu__list {
-  display: flex;
-  gap: 47px;
+  @include flex(flex, row, 47px);
+
   align-items: center;
 }
+
 .menu__link {
   color: #000;
   font-size: 16px;
-  font-family: DM Sans;
   font-weight: 500;
   letter-spacing: 0.64px;
 }

@@ -3,11 +3,10 @@
   backdrop-filter: blur(25px);
 
   &__container {
-    display: flex;
+    @include flex(flex, row, 70px);
     justify-content: space-between;
     align-items: center;
     padding: 129px 0;
-    gap: 70px;
   }
   &__title {
     color: #000;
@@ -18,15 +17,13 @@
 }
 
 .advantage__box {
-  display: flex;
-  gap: 15px;
+  @include flex(flex, row, 15px);
+
   align-items: flex-start;
 }
 
 .advantage__text {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
+  @include flex(flex, column, 12px);
   justify-content: flex-start;
 }
 .advantage__title {
