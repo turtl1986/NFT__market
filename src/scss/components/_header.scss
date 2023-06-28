@@ -13,7 +13,7 @@
     @include flex(flex, row, 0px);
     gap: 20px;
   }
-  &__search--castom {
+  &__search--custom {
     position: relative;
     &:before {
       content: "";
@@ -24,7 +24,7 @@
       margin-top: 15px;
       width: 24px;
       height: 24px;
-      background-image: url(../../assets/icon/header__searc.svg);
+      background-image: url(../../assets/icon/header__search.svg);
     }
   }
   &__search {

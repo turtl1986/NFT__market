@@ -366,10 +366,10 @@ body {
   gap: 0px;
   gap: 20px;
 }
-.header__search--castom {
+.header__search--custom {
   position: relative;
 }
-.header__search--castom:before {
+.header__search--custom:before {
   content: "";
   position: absolute;
   top: 0;
@@ -378,7 +378,7 @@ body {
   margin-top: 15px;
   width: 24px;
   height: 24px;
-  background-image: url(../../assets/icon/header__searc.svg);
+  background-image: url(../../assets/icon/header__search.svg);
 }
 .header__search {
   border-radius: 100px;
