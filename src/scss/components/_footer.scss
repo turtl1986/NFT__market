@@ -7,15 +7,29 @@
   }
   &__information {
     @include flex(flex, row, 100px);
+    @media (max-width: 700px) {
+      flex-direction: column;
+      gap: 40px;
+      align-items: center;
+    }
 
     padding-bottom: 69px;
   }
   &__social {
     @include flex(flex, column, 30px);
+    @media (max-width: 700px) {
+      align-items: center;
+      text-align: center;
+    }
   }
 
   &__form {
     @include flex(flex, column, 24px);
+    @media (max-width: 700px) {
+      align-items: center;
+      text-align: center;
+      padding: 0px 10px;
+    }
   }
   &__menu {
     @include flex(flex, row, 92px);

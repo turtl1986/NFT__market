@@ -7,6 +7,12 @@
     justify-content: space-between;
     align-items: center;
     padding: 129px 0;
+    @media (max-width: 700px) {
+      gap: 20px;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px 0;
+    }
   }
   &__title {
     color: #000;
@@ -18,8 +24,8 @@
 
 .advantage__box {
   @include flex(flex, row, 15px);
-
   align-items: flex-start;
+  width: 100%;
 }
 
 .advantage__text {

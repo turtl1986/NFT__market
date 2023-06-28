@@ -1,12 +1,21 @@
 .banner {
   padding: 100px 0 122px 0;
-
+  @media (max-width: 700px) {
+    padding: 20px 0;
+  }
   &__container {
     @include flex(flex, row, 0px);
     justify-content: space-between;
+    @media (max-width: 700px) {
+      justify-content: center;
+    }
   }
   &__text {
     @include flex(flex, column, 0px);
+    @media (max-width: 700px) {
+      gap: 20px;
+      align-items: center;
+    }
   }
   &__title {
     color: #000;
@@ -14,12 +23,20 @@
     font-family: "Maven";
     letter-spacing: 2px;
     padding-bottom: 22px;
+    @media (max-width: 700px) {
+      padding-bottom: 0;
+      text-align: center;
+    }
   }
   &__description {
     color: #565656;
     font-size: 20px;
     line-height: 160%;
     padding-bottom: 41px;
+    @media (max-width: 700px) {
+      padding-bottom: 0;
+      text-align: center;
+    }
   }
   &__button {
     padding: 20px 40px;
@@ -28,6 +45,10 @@
     font-size: 20px;
     font-family: "Maven";
     letter-spacing: 1.3px;
+    @media (max-width: 700px) {
+      margin-bottom: 0;
+      align-self: center;
+    }
   }
   &__statistics {
     @include flex(flex, row, 23px);
@@ -36,6 +57,9 @@
   &__sliders {
     position: relative;
     padding-left: 50px;
+    @media (max-width: 700px) {
+      display: none;
+    }
 
     &::before {
       position: absolute;
